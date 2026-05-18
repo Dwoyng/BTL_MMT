@@ -1,0 +1,17 @@
+# ninja log v7
+1	90	1779043376911778539	utils/CMakeFiles/utils.dir/go_back_end.c.o	376fd11664ba35d6
+2	98	1779043376912780238	utils/CMakeFiles/utils.dir/stop_n_wait.c.o	c2aee571816a0788
+2	44	1779043376912780238	utils/CMakeFiles/utils.dir/selective_repeat.c.o	24bc1be566e3abfc
+1	84	1779124535476573743	server/CMakeFiles/rdt_server.dir/server.c.o	a3bcf2aa2cc7767e
+1	119	1779040488899967982	protocol/CMakeFiles/rdt_protocol.dir/rdt.c.o	f24f4d188a88d867
+1	90	1779124535476573743	client/CMakeFiles/rdt_client.dir/client.c.o	645613d92cda2be8
+98	140	1779043377008942205	utils/libutils.a	2e928e57858696d7
+119	175	1779040489017786578	protocol/librdt_protocol.a	7218ff95b7c03090
+90	139	1779124535565572977	client/rdt_client	2062af60a09dd19b
+84	133	1779124535559573029	server/rdt_server	884983f941254fb2
+1	13	1779124665588659559	client/CMakeFiles/rdt_client.dir/client.c.o	645613d92cda2be8
+1	14	1779124665588659559	server/CMakeFiles/rdt_server.dir/server.c.o	a3bcf2aa2cc7767e
+14	88	1779124665601659486	server/rdt_server	884983f941254fb2
+13	95	1779124665600659492	client/rdt_client	2062af60a09dd19b
+2	14	1779125096496722456	client/CMakeFiles/rdt_client.dir/client.c.o	645613d92cda2be8
+14	72	1779125096508722461	client/rdt_client	2062af60a09dd19b

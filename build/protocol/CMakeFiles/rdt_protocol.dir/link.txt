@@ -1,0 +1,2 @@
+/usr/bin/ar qc librdt_protocol.a CMakeFiles/rdt_protocol.dir/rdt.c.o
+/usr/bin/ranlib librdt_protocol.a

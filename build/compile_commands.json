@@ -1,0 +1,38 @@
+[
+{
+  "directory": "/home/dwoyng/BTL_MMT/build",
+  "command": "/usr/lib/ccache/clang-14 -I/home/dwoyng/BTL_MMT -I/home/dwoyng/BTL_MMT/protocol/rdt.c -g -std=gnu11 -g -O0 -Wall -o protocol/CMakeFiles/rdt_protocol.dir/rdt.c.o -c /home/dwoyng/BTL_MMT/protocol/rdt.c",
+  "file": "/home/dwoyng/BTL_MMT/protocol/rdt.c",
+  "output": "/home/dwoyng/BTL_MMT/build/protocol/CMakeFiles/rdt_protocol.dir/rdt.c.o"
+},
+{
+  "directory": "/home/dwoyng/BTL_MMT/build",
+  "command": "/usr/lib/ccache/clang-14 -I/home/dwoyng/BTL_MMT -I/home/dwoyng/BTL_MMT/utils/UTILS_SOURCE -I/home/dwoyng/BTL_MMT/utils/PROTOCOL_SOURCE -g -std=gnu11 -g -O0 -Wall -o utils/CMakeFiles/utils.dir/go_back_end.c.o -c /home/dwoyng/BTL_MMT/utils/go_back_end.c",
+  "file": "/home/dwoyng/BTL_MMT/utils/go_back_end.c",
+  "output": "/home/dwoyng/BTL_MMT/build/utils/CMakeFiles/utils.dir/go_back_end.c.o"
+},
+{
+  "directory": "/home/dwoyng/BTL_MMT/build",
+  "command": "/usr/lib/ccache/clang-14 -I/home/dwoyng/BTL_MMT -I/home/dwoyng/BTL_MMT/utils/UTILS_SOURCE -I/home/dwoyng/BTL_MMT/utils/PROTOCOL_SOURCE -g -std=gnu11 -g -O0 -Wall -o utils/CMakeFiles/utils.dir/stop_n_wait.c.o -c /home/dwoyng/BTL_MMT/utils/stop_n_wait.c",
+  "file": "/home/dwoyng/BTL_MMT/utils/stop_n_wait.c",
+  "output": "/home/dwoyng/BTL_MMT/build/utils/CMakeFiles/utils.dir/stop_n_wait.c.o"
+},
+{
+  "directory": "/home/dwoyng/BTL_MMT/build",
+  "command": "/usr/lib/ccache/clang-14 -I/home/dwoyng/BTL_MMT -I/home/dwoyng/BTL_MMT/utils/UTILS_SOURCE -I/home/dwoyng/BTL_MMT/utils/PROTOCOL_SOURCE -g -std=gnu11 -g -O0 -Wall -o utils/CMakeFiles/utils.dir/selective_repeat.c.o -c /home/dwoyng/BTL_MMT/utils/selective_repeat.c",
+  "file": "/home/dwoyng/BTL_MMT/utils/selective_repeat.c",
+  "output": "/home/dwoyng/BTL_MMT/build/utils/CMakeFiles/utils.dir/selective_repeat.c.o"
+},
+{
+  "directory": "/home/dwoyng/BTL_MMT/build",
+  "command": "/usr/lib/ccache/clang-14 -I/home/dwoyng/BTL_MMT -I/home/dwoyng/BTL_MMT/utils/UTILS_SOURCE -I/home/dwoyng/BTL_MMT/utils/PROTOCOL_SOURCE -I/home/dwoyng/BTL_MMT/protocol/rdt.c -g -std=gnu11 -g -O0 -Wall -o client/CMakeFiles/rdt_client.dir/client.c.o -c /home/dwoyng/BTL_MMT/client/client.c",
+  "file": "/home/dwoyng/BTL_MMT/client/client.c",
+  "output": "/home/dwoyng/BTL_MMT/build/client/CMakeFiles/rdt_client.dir/client.c.o"
+},
+{
+  "directory": "/home/dwoyng/BTL_MMT/build",
+  "command": "/usr/lib/ccache/clang-14 -I/home/dwoyng/BTL_MMT -I/home/dwoyng/BTL_MMT/utils/UTILS_SOURCE -I/home/dwoyng/BTL_MMT/utils/PROTOCOL_SOURCE -I/home/dwoyng/BTL_MMT/protocol/rdt.c -g -std=gnu11 -g -O0 -Wall -o server/CMakeFiles/rdt_server.dir/server.c.o -c /home/dwoyng/BTL_MMT/server/server.c",
+  "file": "/home/dwoyng/BTL_MMT/server/server.c",
+  "output": "/home/dwoyng/BTL_MMT/build/server/CMakeFiles/rdt_server.dir/server.c.o"
+}
+]
