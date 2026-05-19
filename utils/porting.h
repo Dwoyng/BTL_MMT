@@ -4,35 +4,33 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
+
 #include "go_back_end.h"
 #include "selective_repeat.h"
 #include "stop_n_wait.h"
 
-enum {
-    GO_BACK_END = 0,
-    SELECTIVE_REPEAT,
-    STOP_AND_WAIT,
-};
 
-#define CHOSEN_PROTOCOL GO_BACK_END
+#define GO_BACK_N         0
+#define SELECTIVE_REPEAT  1
+#define STOP_AND_WAIT     2
 
-#if (CHOSEN_PROTOCOL == GO_BACK_END)
-#define GET_PROTOCOL_VTABLE()  *go_back_n_t
+#define CHOSEN_PROTOCOL   STOP_AND_WAIT   
 
 
-#elif (CHOSEN_PROTOCOL == SELECTIVE_REPEAT)
-#define GET_PROTOCOL_VTABLE()  *selective_repeat_t
+#if CHOSEN_PROTOCOL == GO_BACK_N
+    typedef go_back_n_t* protocol_handle;
 
+#elif CHOSEN_PROTOCOL == SELECTIVE_REPEAT
+    typedef selective_repeat_t* protocol_handle;
 
-#else 
-#define GET_PROTOCOL_VTABLE()  *stop_n_wait_t
+#elif CHOSEN_PROTOCOL == STOP_AND_WAIT
+    typedef stop_n_wait_t* protocol_handle;
 
+#else
+    #error "CHOSEN_PROTOCOL is not defined correctly!"
 #endif
 
 #ifdef __cplusplus
 }
 #endif
-
-
-
 #endif

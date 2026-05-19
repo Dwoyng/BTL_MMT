@@ -42,15 +42,6 @@ if(NOT DEFINED CMAKE_OBJDUMP)
   set(CMAKE_OBJDUMP "/usr/bin/llvm-objdump-14")
 endif()
 
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for each subdirectory.
-  include("/home/dwoyng/BTL_MMT/build/protocol/cmake_install.cmake")
-  include("/home/dwoyng/BTL_MMT/build/utils/cmake_install.cmake")
-  include("/home/dwoyng/BTL_MMT/build/client/cmake_install.cmake")
-  include("/home/dwoyng/BTL_MMT/build/server/cmake_install.cmake")
-
-endif()
-
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)

@@ -1,2 +1,0 @@
-/usr/bin/ar qc libutils.a CMakeFiles/utils.dir/go_back_end.c.o CMakeFiles/utils.dir/stop_n_wait.c.o CMakeFiles/utils.dir/selective_repeat.c.o
-/usr/bin/ranlib libutils.a

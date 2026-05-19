@@ -117,32 +117,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named rdt_protocol
-
-# Build rule for target.
-rdt_protocol: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rdt_protocol
-.PHONY : rdt_protocol
-
-# fast build rule for target.
-rdt_protocol/fast:
-	$(MAKE) $(MAKESILENT) -f protocol/CMakeFiles/rdt_protocol.dir/build.make protocol/CMakeFiles/rdt_protocol.dir/build
-.PHONY : rdt_protocol/fast
-
-#=============================================================================
-# Target rules for targets named utils
-
-# Build rule for target.
-utils: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 utils
-.PHONY : utils
-
-# fast build rule for target.
-utils/fast:
-	$(MAKE) $(MAKESILENT) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/build
-.PHONY : utils/fast
-
-#=============================================================================
 # Target rules for targets named rdt_client
 
 # Build rule for target.
@@ -152,7 +126,7 @@ rdt_client: cmake_check_build_system
 
 # fast build rule for target.
 rdt_client/fast:
-	$(MAKE) $(MAKESILENT) -f client/CMakeFiles/rdt_client.dir/build.make client/CMakeFiles/rdt_client.dir/build
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rdt_client.dir/build.make CMakeFiles/rdt_client.dir/build
 .PHONY : rdt_client/fast
 
 #=============================================================================
@@ -165,8 +139,164 @@ rdt_server: cmake_check_build_system
 
 # fast build rule for target.
 rdt_server/fast:
-	$(MAKE) $(MAKESILENT) -f server/CMakeFiles/rdt_server.dir/build.make server/CMakeFiles/rdt_server.dir/build
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rdt_server.dir/build.make CMakeFiles/rdt_server.dir/build
 .PHONY : rdt_server/fast
+
+client/client.o: client/client.c.o
+.PHONY : client/client.o
+
+# target to build an object file
+client/client.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rdt_client.dir/build.make CMakeFiles/rdt_client.dir/client/client.c.o
+.PHONY : client/client.c.o
+
+client/client.i: client/client.c.i
+.PHONY : client/client.i
+
+# target to preprocess a source file
+client/client.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rdt_client.dir/build.make CMakeFiles/rdt_client.dir/client/client.c.i
+.PHONY : client/client.c.i
+
+client/client.s: client/client.c.s
+.PHONY : client/client.s
+
+# target to generate assembly for a file
+client/client.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rdt_client.dir/build.make CMakeFiles/rdt_client.dir/client/client.c.s
+.PHONY : client/client.c.s
+
+protocol/rdt.o: protocol/rdt.c.o
+.PHONY : protocol/rdt.o
+
+# target to build an object file
+protocol/rdt.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rdt_client.dir/build.make CMakeFiles/rdt_client.dir/protocol/rdt.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rdt_server.dir/build.make CMakeFiles/rdt_server.dir/protocol/rdt.c.o
+.PHONY : protocol/rdt.c.o
+
+protocol/rdt.i: protocol/rdt.c.i
+.PHONY : protocol/rdt.i
+
+# target to preprocess a source file
+protocol/rdt.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rdt_client.dir/build.make CMakeFiles/rdt_client.dir/protocol/rdt.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rdt_server.dir/build.make CMakeFiles/rdt_server.dir/protocol/rdt.c.i
+.PHONY : protocol/rdt.c.i
+
+protocol/rdt.s: protocol/rdt.c.s
+.PHONY : protocol/rdt.s
+
+# target to generate assembly for a file
+protocol/rdt.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rdt_client.dir/build.make CMakeFiles/rdt_client.dir/protocol/rdt.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rdt_server.dir/build.make CMakeFiles/rdt_server.dir/protocol/rdt.c.s
+.PHONY : protocol/rdt.c.s
+
+server/server.o: server/server.c.o
+.PHONY : server/server.o
+
+# target to build an object file
+server/server.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rdt_server.dir/build.make CMakeFiles/rdt_server.dir/server/server.c.o
+.PHONY : server/server.c.o
+
+server/server.i: server/server.c.i
+.PHONY : server/server.i
+
+# target to preprocess a source file
+server/server.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rdt_server.dir/build.make CMakeFiles/rdt_server.dir/server/server.c.i
+.PHONY : server/server.c.i
+
+server/server.s: server/server.c.s
+.PHONY : server/server.s
+
+# target to generate assembly for a file
+server/server.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rdt_server.dir/build.make CMakeFiles/rdt_server.dir/server/server.c.s
+.PHONY : server/server.c.s
+
+utils/go_back_end.o: utils/go_back_end.c.o
+.PHONY : utils/go_back_end.o
+
+# target to build an object file
+utils/go_back_end.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rdt_client.dir/build.make CMakeFiles/rdt_client.dir/utils/go_back_end.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rdt_server.dir/build.make CMakeFiles/rdt_server.dir/utils/go_back_end.c.o
+.PHONY : utils/go_back_end.c.o
+
+utils/go_back_end.i: utils/go_back_end.c.i
+.PHONY : utils/go_back_end.i
+
+# target to preprocess a source file
+utils/go_back_end.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rdt_client.dir/build.make CMakeFiles/rdt_client.dir/utils/go_back_end.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rdt_server.dir/build.make CMakeFiles/rdt_server.dir/utils/go_back_end.c.i
+.PHONY : utils/go_back_end.c.i
+
+utils/go_back_end.s: utils/go_back_end.c.s
+.PHONY : utils/go_back_end.s
+
+# target to generate assembly for a file
+utils/go_back_end.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rdt_client.dir/build.make CMakeFiles/rdt_client.dir/utils/go_back_end.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rdt_server.dir/build.make CMakeFiles/rdt_server.dir/utils/go_back_end.c.s
+.PHONY : utils/go_back_end.c.s
+
+utils/selective_repeat.o: utils/selective_repeat.c.o
+.PHONY : utils/selective_repeat.o
+
+# target to build an object file
+utils/selective_repeat.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rdt_client.dir/build.make CMakeFiles/rdt_client.dir/utils/selective_repeat.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rdt_server.dir/build.make CMakeFiles/rdt_server.dir/utils/selective_repeat.c.o
+.PHONY : utils/selective_repeat.c.o
+
+utils/selective_repeat.i: utils/selective_repeat.c.i
+.PHONY : utils/selective_repeat.i
+
+# target to preprocess a source file
+utils/selective_repeat.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rdt_client.dir/build.make CMakeFiles/rdt_client.dir/utils/selective_repeat.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rdt_server.dir/build.make CMakeFiles/rdt_server.dir/utils/selective_repeat.c.i
+.PHONY : utils/selective_repeat.c.i
+
+utils/selective_repeat.s: utils/selective_repeat.c.s
+.PHONY : utils/selective_repeat.s
+
+# target to generate assembly for a file
+utils/selective_repeat.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rdt_client.dir/build.make CMakeFiles/rdt_client.dir/utils/selective_repeat.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rdt_server.dir/build.make CMakeFiles/rdt_server.dir/utils/selective_repeat.c.s
+.PHONY : utils/selective_repeat.c.s
+
+utils/stop_n_wait.o: utils/stop_n_wait.c.o
+.PHONY : utils/stop_n_wait.o
+
+# target to build an object file
+utils/stop_n_wait.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rdt_client.dir/build.make CMakeFiles/rdt_client.dir/utils/stop_n_wait.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rdt_server.dir/build.make CMakeFiles/rdt_server.dir/utils/stop_n_wait.c.o
+.PHONY : utils/stop_n_wait.c.o
+
+utils/stop_n_wait.i: utils/stop_n_wait.c.i
+.PHONY : utils/stop_n_wait.i
+
+# target to preprocess a source file
+utils/stop_n_wait.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rdt_client.dir/build.make CMakeFiles/rdt_client.dir/utils/stop_n_wait.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rdt_server.dir/build.make CMakeFiles/rdt_server.dir/utils/stop_n_wait.c.i
+.PHONY : utils/stop_n_wait.c.i
+
+utils/stop_n_wait.s: utils/stop_n_wait.c.s
+.PHONY : utils/stop_n_wait.s
+
+# target to generate assembly for a file
+utils/stop_n_wait.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rdt_client.dir/build.make CMakeFiles/rdt_client.dir/utils/stop_n_wait.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rdt_server.dir/build.make CMakeFiles/rdt_server.dir/utils/stop_n_wait.c.s
+.PHONY : utils/stop_n_wait.c.s
 
 # Help Target
 help:
@@ -177,9 +307,25 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... rdt_client"
-	@echo "... rdt_protocol"
 	@echo "... rdt_server"
-	@echo "... utils"
+	@echo "... client/client.o"
+	@echo "... client/client.i"
+	@echo "... client/client.s"
+	@echo "... protocol/rdt.o"
+	@echo "... protocol/rdt.i"
+	@echo "... protocol/rdt.s"
+	@echo "... server/server.o"
+	@echo "... server/server.i"
+	@echo "... server/server.s"
+	@echo "... utils/go_back_end.o"
+	@echo "... utils/go_back_end.i"
+	@echo "... utils/go_back_end.s"
+	@echo "... utils/selective_repeat.o"
+	@echo "... utils/selective_repeat.i"
+	@echo "... utils/selective_repeat.s"
+	@echo "... utils/stop_n_wait.o"
+	@echo "... utils/stop_n_wait.i"
+	@echo "... utils/stop_n_wait.s"
 .PHONY : help
 
 

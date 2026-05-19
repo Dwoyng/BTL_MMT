@@ -14,6 +14,7 @@ typedef struct {
     struct sockaddr_in dest_addr;
     rdt_t* last_pkg;
     uint8_t can_send;
+    uint32_t window_size;
 } snw_impl_t;
 
 #define _impl(x) ((snw_impl_t*)(x))

@@ -7,6 +7,7 @@
 #include "utils/go_back_end.h"
 #include "utils/selective_repeat.h"
 #include "utils/stop_n_wait.h"
+#include "utils/porting.h"
 
 typedef struct rdt_client_t rdt_client_t;
 

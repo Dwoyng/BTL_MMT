@@ -1,11 +1,7 @@
 {
 	"InstallScripts" : 
 	[
-		"/home/dwoyng/BTL_MMT/build/cmake_install.cmake",
-		"/home/dwoyng/BTL_MMT/build/protocol/cmake_install.cmake",
-		"/home/dwoyng/BTL_MMT/build/utils/cmake_install.cmake",
-		"/home/dwoyng/BTL_MMT/build/client/cmake_install.cmake",
-		"/home/dwoyng/BTL_MMT/build/server/cmake_install.cmake"
+		"/home/dwoyng/BTL_MMT/build/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

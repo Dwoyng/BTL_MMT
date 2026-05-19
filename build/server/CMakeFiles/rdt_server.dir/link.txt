@@ -1,1 +1,0 @@
-/usr/lib/ccache/cc -g CMakeFiles/rdt_server.dir/server.c.o -o rdt_server  ../utils/libutils.a ../protocol/librdt_protocol.a -lpthread

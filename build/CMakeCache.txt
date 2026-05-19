@@ -14,15 +14,6 @@
 # EXTERNAL cache entries
 ########################
 
-//Value Computed by CMake
-BTL_MMT_BINARY_DIR:STATIC=/home/dwoyng/BTL_MMT/build
-
-//Value Computed by CMake
-BTL_MMT_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-BTL_MMT_SOURCE_DIR:STATIC=/home/dwoyng/BTL_MMT
-
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=/usr/bin/llvm-addr2line-14
 
@@ -161,7 +152,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=BTL_MMT
+CMAKE_PROJECT_NAME:STATIC=utils_project
 
 //Value Computed by CMake
 CMAKE_PROJECT_SPDX_LICENSE:STATIC=
@@ -232,22 +223,13 @@ CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Value Computed by CMake
-protocol_project_BINARY_DIR:STATIC=/home/dwoyng/BTL_MMT/build/protocol
+utils_project_BINARY_DIR:STATIC=/home/dwoyng/BTL_MMT/build
 
 //Value Computed by CMake
-protocol_project_IS_TOP_LEVEL:STATIC=OFF
+utils_project_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
-protocol_project_SOURCE_DIR:STATIC=/home/dwoyng/BTL_MMT/protocol
-
-//Value Computed by CMake
-utils_project_BINARY_DIR:STATIC=/home/dwoyng/BTL_MMT/build/utils
-
-//Value Computed by CMake
-utils_project_IS_TOP_LEVEL:STATIC=OFF
-
-//Value Computed by CMake
-utils_project_SOURCE_DIR:STATIC=/home/dwoyng/BTL_MMT/utils
+utils_project_SOURCE_DIR:STATIC=/home/dwoyng/BTL_MMT
 
 
 ########################
@@ -334,6 +316,8 @@ CMAKE_GENERATOR_INSTANCE:INTERNAL=
 CMAKE_GENERATOR_PLATFORM:INTERNAL=
 //Name of generator toolset.
 CMAKE_GENERATOR_TOOLSET:INTERNAL=
+//Test CMAKE_HAVE_LIBC_PTHREAD
+CMAKE_HAVE_LIBC_PTHREAD:INTERNAL=1
 //Source directory with the top level CMakeLists.txt file for this
 // project
 CMAKE_HOME_DIRECTORY:INTERNAL=/home/dwoyng/BTL_MMT
@@ -358,7 +342,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -403,4 +387,6 @@ CMAKE_TAPI-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Details about finding Threads
+FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 

@@ -1290,197 +1290,6 @@ events:
         - "/home/dwoyng/.local/bin"
         - "/home/dwoyng/.local/bin"
   -
-    kind: "try_compile-v1"
-    backtrace:
-      - "/home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
-      - "/home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/share/cmake-4.2/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:2 (project)"
-    checks:
-      - "Detecting C compiler ABI info"
-    directories:
-      source: "/home/dwoyng/BTL_MMT/build/CMakeFiles/CMakeScratch/TryCompile-8d8nYp"
-      binary: "/home/dwoyng/BTL_MMT/build/CMakeFiles/CMakeScratch/TryCompile-8d8nYp"
-    cmakeVariables:
-      CMAKE_C_FLAGS: ""
-      CMAKE_C_FLAGS_DEBUG: "-g"
-      CMAKE_EXE_LINKER_FLAGS: ""
-    buildResult:
-      variable: "CMAKE_C_ABI_COMPILED"
-      cached: true
-      stdout: |
-        Change Dir: '/home/dwoyng/BTL_MMT/build/CMakeFiles/CMakeScratch/TryCompile-8d8nYp'
-        
-        Run Build Command(s): /home/dwoyng/.local/bin/ninja -v cmTC_db4eb
-        [1/2] /usr/lib/ccache/clang-14   -v -MD -MT CMakeFiles/cmTC_db4eb.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_db4eb.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_db4eb.dir/CMakeCCompilerABI.c.o -c /home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/share/cmake-4.2/Modules/CMakeCCompilerABI.c
-        Ubuntu clang version 14.0.0-1ubuntu1.1
-        Target: x86_64-pc-linux-gnu
-        Thread model: posix
-        InstalledDir: /usr/bin
-        Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
-        Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
-        Candidate multilib: .;@m64
-        Selected multilib: .;@m64
-         (in-process)
-         "/usr/lib/llvm-14/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/dwoyng/BTL_MMT/build/CMakeFiles/CMakeScratch/TryCompile-8d8nYp -resource-dir /usr/lib/llvm-14/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_db4eb.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_db4eb.dir/CMakeCCompilerABI.c.o -sys-header-deps -internal-isystem /usr/lib/llvm-14/lib/clang/14.0.0/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdebug-compilation-dir=/home/dwoyng/BTL_MMT/build/CMakeFiles/CMakeScratch/TryCompile-8d8nYp -ferror-limit 19 -fgnuc-version=4.2.1 -fcolor-diagnostics -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_db4eb.dir/CMakeCCompilerABI.c.o -x c /home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/share/cmake-4.2/Modules/CMakeCCompilerABI.c
-        clang -cc1 version 14.0.0 based upon LLVM 14.0.0 default target x86_64-pc-linux-gnu
-        ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"
-        ignoring nonexistent directory "/include"
-        #include "..." search starts here:
-        #include <...> search starts here:
-         /usr/lib/llvm-14/lib/clang/14.0.0/include
-         /usr/local/include
-         /usr/include/x86_64-linux-gnu
-         /usr/include
-        End of search list.
-        [2/2] : && /usr/lib/ccache/clang-14  -v -Wl,-v CMakeFiles/cmTC_db4eb.dir/CMakeCCompilerABI.c.o -o cmTC_db4eb   && :
-        Ubuntu clang version 14.0.0-1ubuntu1.1
-        Target: x86_64-pc-linux-gnu
-        Thread model: posix
-        InstalledDir: /usr/bin
-        Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
-        Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
-        Candidate multilib: .;@m64
-        Selected multilib: .;@m64
-         "/usr/bin/ld" -pie -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_db4eb /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/11 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-14/bin/../lib -L/lib -L/usr/lib -v CMakeFiles/cmTC_db4eb.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtendS.o /lib/x86_64-linux-gnu/crtn.o
-        GNU ld (GNU Binutils for Ubuntu) 2.38
-        
-      exitCode: 0
-  -
-    kind: "message-v1"
-    backtrace:
-      - "/home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:217 (message)"
-      - "/home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/share/cmake-4.2/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:2 (project)"
-    message: |
-      Parsed C implicit include dir info: rv=done
-        found start of include info
-        found start of implicit include info
-          add: [/usr/lib/llvm-14/lib/clang/14.0.0/include]
-          add: [/usr/local/include]
-          add: [/usr/include/x86_64-linux-gnu]
-          add: [/usr/include]
-        end of search list found
-        collapse include dir [/usr/lib/llvm-14/lib/clang/14.0.0/include] ==> [/usr/lib/llvm-14/lib/clang/14.0.0/include]
-        collapse include dir [/usr/local/include] ==> [/usr/local/include]
-        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
-        collapse include dir [/usr/include] ==> [/usr/include]
-        implicit include dirs: [/usr/lib/llvm-14/lib/clang/14.0.0/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
-      
-      
-  -
-    kind: "message-v1"
-    backtrace:
-      - "/home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
-      - "/home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/share/cmake-4.2/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:2 (project)"
-    message: |
-      Parsed C implicit link information:
-        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/home/dwoyng/BTL_MMT/build/CMakeFiles/CMakeScratch/TryCompile-8d8nYp']
-        ignore line: []
-        ignore line: [Run Build Command(s): /home/dwoyng/.local/bin/ninja -v cmTC_db4eb]
-        ignore line: [[1/2] /usr/lib/ccache/clang-14   -v -MD -MT CMakeFiles/cmTC_db4eb.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_db4eb.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_db4eb.dir/CMakeCCompilerABI.c.o -c /home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/share/cmake-4.2/Modules/CMakeCCompilerABI.c]
-        ignore line: [Ubuntu clang version 14.0.0-1ubuntu1.1]
-        ignore line: [Target: x86_64-pc-linux-gnu]
-        ignore line: [Thread model: posix]
-        ignore line: [InstalledDir: /usr/bin]
-        ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11]
-        ignore line: [Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11]
-        ignore line: [Candidate multilib: .]
-        ignore line: [@m64]
-        ignore line: [Selected multilib: .]
-        ignore line: [@m64]
-        ignore line: [ (in-process)]
-        ignore line: [ "/usr/lib/llvm-14/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/dwoyng/BTL_MMT/build/CMakeFiles/CMakeScratch/TryCompile-8d8nYp -resource-dir /usr/lib/llvm-14/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_db4eb.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_db4eb.dir/CMakeCCompilerABI.c.o -sys-header-deps -internal-isystem /usr/lib/llvm-14/lib/clang/14.0.0/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdebug-compilation-dir=/home/dwoyng/BTL_MMT/build/CMakeFiles/CMakeScratch/TryCompile-8d8nYp -ferror-limit 19 -fgnuc-version=4.2.1 -fcolor-diagnostics -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_db4eb.dir/CMakeCCompilerABI.c.o -x c /home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/share/cmake-4.2/Modules/CMakeCCompilerABI.c]
-        ignore line: [clang -cc1 version 14.0.0 based upon LLVM 14.0.0 default target x86_64-pc-linux-gnu]
-        ignore line: [ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"]
-        ignore line: [ignoring nonexistent directory "/include"]
-        ignore line: [#include "..." search starts here:]
-        ignore line: [#include <...> search starts here:]
-        ignore line: [ /usr/lib/llvm-14/lib/clang/14.0.0/include]
-        ignore line: [ /usr/local/include]
-        ignore line: [ /usr/include/x86_64-linux-gnu]
-        ignore line: [ /usr/include]
-        ignore line: [End of search list.]
-        ignore line: [[2/2] : && /usr/lib/ccache/clang-14  -v -Wl -v CMakeFiles/cmTC_db4eb.dir/CMakeCCompilerABI.c.o -o cmTC_db4eb   && :]
-        ignore line: [Ubuntu clang version 14.0.0-1ubuntu1.1]
-        ignore line: [Target: x86_64-pc-linux-gnu]
-        ignore line: [Thread model: posix]
-        ignore line: [InstalledDir: /usr/bin]
-        ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11]
-        ignore line: [Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11]
-        ignore line: [Candidate multilib: .]
-        ignore line: [@m64]
-        ignore line: [Selected multilib: .]
-        ignore line: [@m64]
-        link line: [ "/usr/bin/ld" -pie -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_db4eb /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/11 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-14/bin/../lib -L/lib -L/usr/lib -v CMakeFiles/cmTC_db4eb.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtendS.o /lib/x86_64-linux-gnu/crtn.o]
-          arg [/usr/bin/ld] ==> ignore
-          arg [-pie] ==> ignore
-          arg [-zrelro] ==> ignore
-          arg [--hash-style=gnu] ==> ignore
-          arg [--build-id] ==> ignore
-          arg [--eh-frame-hdr] ==> ignore
-          arg [-m] ==> ignore
-          arg [elf_x86_64] ==> ignore
-          arg [-dynamic-linker] ==> ignore
-          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
-          arg [-o] ==> ignore
-          arg [cmTC_db4eb] ==> ignore
-          arg [/lib/x86_64-linux-gnu/Scrt1.o] ==> obj [/lib/x86_64-linux-gnu/Scrt1.o]
-          arg [/lib/x86_64-linux-gnu/crti.o] ==> obj [/lib/x86_64-linux-gnu/crti.o]
-          arg [/usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtbeginS.o] ==> obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtbeginS.o]
-          arg [-L/usr/bin/../lib/gcc/x86_64-linux-gnu/11] ==> dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/11]
-          arg [-L/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../lib64] ==> dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../lib64]
-          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
-          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
-          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
-          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
-          arg [-L/usr/lib/llvm-14/bin/../lib] ==> dir [/usr/lib/llvm-14/bin/../lib]
-          arg [-L/lib] ==> dir [/lib]
-          arg [-L/usr/lib] ==> dir [/usr/lib]
-          arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_db4eb.dir/CMakeCCompilerABI.c.o] ==> ignore
-          arg [-lgcc] ==> lib [gcc]
-          arg [--as-needed] ==> ignore
-          arg [-lgcc_s] ==> lib [gcc_s]
-          arg [--no-as-needed] ==> ignore
-          arg [-lc] ==> lib [c]
-          arg [-lgcc] ==> lib [gcc]
-          arg [--as-needed] ==> ignore
-          arg [-lgcc_s] ==> lib [gcc_s]
-          arg [--no-as-needed] ==> ignore
-          arg [/usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtendS.o] ==> obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtendS.o]
-          arg [/lib/x86_64-linux-gnu/crtn.o] ==> obj [/lib/x86_64-linux-gnu/crtn.o]
-        linker tool for 'C': /usr/bin/ld
-        collapse obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtbeginS.o] ==> [/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o]
-        collapse obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtendS.o] ==> [/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o]
-        collapse library dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/11] ==> [/usr/lib/gcc/x86_64-linux-gnu/11]
-        collapse library dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../lib64] ==> [/usr/lib64]
-        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
-        collapse library dir [/lib/../lib64] ==> [/lib64]
-        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
-        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
-        collapse library dir [/usr/lib/llvm-14/bin/../lib] ==> [/usr/lib/llvm-14/lib]
-        collapse library dir [/lib] ==> [/lib]
-        collapse library dir [/usr/lib] ==> [/usr/lib]
-        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
-        implicit objs: [/lib/x86_64-linux-gnu/Scrt1.o;/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o;/lib/x86_64-linux-gnu/crtn.o]
-        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/11;/usr/lib64;/lib/x86_64-linux-gnu;/lib64;/usr/lib/x86_64-linux-gnu;/usr/lib/llvm-14/lib;/lib;/usr/lib]
-        implicit fwks: []
-      
-      
-  -
-    kind: "message-v1"
-    backtrace:
-      - "/home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/share/cmake-4.2/Modules/Internal/CMakeDetermineLinkerId.cmake:38 (message)"
-      - "/home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
-      - "/home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/share/cmake-4.2/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:2 (project)"
-    message: |
-      Running the C compiler's linker: "/usr/bin/ld" "-v"
-      GNU ld (GNU Binutils for Ubuntu) 2.38
-  -
     kind: "find-v1"
     backtrace:
       - "/home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
@@ -1488,7 +1297,7 @@ events:
       - "/home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
       - "/home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "/home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "protocol/CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:2 (project)"
     mode: "file"
     variable: "src_in"
     description: "Path to a file."
@@ -1529,25 +1338,13 @@ events:
         - "/home/dwoyng/.local/bin"
         - "/home/dwoyng/.local/bin"
         - "/home/dwoyng/.local/bin"
-      CMAKE_INSTALL_PREFIX: "/usr/local"
-      CMAKE_SYSTEM_PREFIX_PATH:
-        - "/usr/local"
-        - "/usr"
-        - "/"
-        - "/home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data"
-        - "/usr/local"
-        - "/usr/X11R6"
-        - "/usr/pkg"
-        - "/opt"
-      CMAKE_SYSTEM_INCLUDE_PATH:
-        - "/usr/include/X11"
   -
     kind: "message-v1"
     backtrace:
       - "/home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
       - "/home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "/home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "protocol/CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:2 (project)"
     message: |
       Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
       Compiler: /usr/lib/ccache/clang++-14 
@@ -1568,7 +1365,7 @@ events:
     backtrace:
       - "/home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/share/cmake-4.2/Modules/Compiler/Clang-FindBinUtils.cmake:26 (find_program)"
       - "/home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
-      - "protocol/CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_CXX_COMPILER_AR"
     description: "LLVM archiver"
@@ -1600,26 +1397,6 @@ events:
       - "/usr/games/"
       - "/usr/local/games/"
       - "/snap/bin/"
-      - "/usr/local/bin/"
-      - "/usr/local/sbin/"
-      - "/usr/local/"
-      - "/usr/bin/"
-      - "/usr/sbin/"
-      - "/usr/"
-      - "/bin/"
-      - "/sbin/"
-      - "/home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/bin/"
-      - "/home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/sbin/"
-      - "/home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/"
-      - "/usr/X11R6/bin/"
-      - "/usr/X11R6/sbin/"
-      - "/usr/X11R6/"
-      - "/usr/pkg/bin/"
-      - "/usr/pkg/sbin/"
-      - "/usr/pkg/"
-      - "/opt/bin/"
-      - "/opt/sbin/"
-      - "/opt/"
     searched_directories:
       - "/usr/bin/llvm-ar-14.0"
       - "/usr/lib/ccache/llvm-ar-14.0"
@@ -1635,26 +1412,6 @@ events:
       - "/usr/games/llvm-ar-14.0"
       - "/usr/local/games/llvm-ar-14.0"
       - "/snap/bin/llvm-ar-14.0"
-      - "/usr/local/bin/llvm-ar-14.0"
-      - "/usr/local/sbin/llvm-ar-14.0"
-      - "/usr/local/llvm-ar-14.0"
-      - "/usr/bin/llvm-ar-14.0"
-      - "/usr/sbin/llvm-ar-14.0"
-      - "/usr/llvm-ar-14.0"
-      - "/bin/llvm-ar-14.0"
-      - "/sbin/llvm-ar-14.0"
-      - "/home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/bin/llvm-ar-14.0"
-      - "/home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/sbin/llvm-ar-14.0"
-      - "/home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/llvm-ar-14.0"
-      - "/usr/X11R6/bin/llvm-ar-14.0"
-      - "/usr/X11R6/sbin/llvm-ar-14.0"
-      - "/usr/X11R6/llvm-ar-14.0"
-      - "/usr/pkg/bin/llvm-ar-14.0"
-      - "/usr/pkg/sbin/llvm-ar-14.0"
-      - "/usr/pkg/llvm-ar-14.0"
-      - "/opt/bin/llvm-ar-14.0"
-      - "/opt/sbin/llvm-ar-14.0"
-      - "/opt/llvm-ar-14.0"
     found: "/usr/bin/llvm-ar-14"
     search_context:
       ENV{PATH}:
@@ -1680,22 +1437,12 @@ events:
         - "/home/dwoyng/.local/bin"
         - "/home/dwoyng/.local/bin"
         - "/home/dwoyng/.local/bin"
-      CMAKE_INSTALL_PREFIX: "/usr/local"
-      CMAKE_SYSTEM_PREFIX_PATH:
-        - "/usr/local"
-        - "/usr"
-        - "/"
-        - "/home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data"
-        - "/usr/local"
-        - "/usr/X11R6"
-        - "/usr/pkg"
-        - "/opt"
   -
     kind: "find-v1"
     backtrace:
       - "/home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/share/cmake-4.2/Modules/Compiler/Clang-FindBinUtils.cmake:38 (find_program)"
       - "/home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
-      - "protocol/CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_CXX_COMPILER_RANLIB"
     description: "Generate index for LLVM archive"
@@ -1727,26 +1474,6 @@ events:
       - "/usr/games/"
       - "/usr/local/games/"
       - "/snap/bin/"
-      - "/usr/local/bin/"
-      - "/usr/local/sbin/"
-      - "/usr/local/"
-      - "/usr/bin/"
-      - "/usr/sbin/"
-      - "/usr/"
-      - "/bin/"
-      - "/sbin/"
-      - "/home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/bin/"
-      - "/home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/sbin/"
-      - "/home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/"
-      - "/usr/X11R6/bin/"
-      - "/usr/X11R6/sbin/"
-      - "/usr/X11R6/"
-      - "/usr/pkg/bin/"
-      - "/usr/pkg/sbin/"
-      - "/usr/pkg/"
-      - "/opt/bin/"
-      - "/opt/sbin/"
-      - "/opt/"
     searched_directories:
       - "/usr/bin/llvm-ranlib-14.0"
       - "/usr/lib/ccache/llvm-ranlib-14.0"
@@ -1762,26 +1489,6 @@ events:
       - "/usr/games/llvm-ranlib-14.0"
       - "/usr/local/games/llvm-ranlib-14.0"
       - "/snap/bin/llvm-ranlib-14.0"
-      - "/usr/local/bin/llvm-ranlib-14.0"
-      - "/usr/local/sbin/llvm-ranlib-14.0"
-      - "/usr/local/llvm-ranlib-14.0"
-      - "/usr/bin/llvm-ranlib-14.0"
-      - "/usr/sbin/llvm-ranlib-14.0"
-      - "/usr/llvm-ranlib-14.0"
-      - "/bin/llvm-ranlib-14.0"
-      - "/sbin/llvm-ranlib-14.0"
-      - "/home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/bin/llvm-ranlib-14.0"
-      - "/home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/sbin/llvm-ranlib-14.0"
-      - "/home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/llvm-ranlib-14.0"
-      - "/usr/X11R6/bin/llvm-ranlib-14.0"
-      - "/usr/X11R6/sbin/llvm-ranlib-14.0"
-      - "/usr/X11R6/llvm-ranlib-14.0"
-      - "/usr/pkg/bin/llvm-ranlib-14.0"
-      - "/usr/pkg/sbin/llvm-ranlib-14.0"
-      - "/usr/pkg/llvm-ranlib-14.0"
-      - "/opt/bin/llvm-ranlib-14.0"
-      - "/opt/sbin/llvm-ranlib-14.0"
-      - "/opt/llvm-ranlib-14.0"
     found: "/usr/bin/llvm-ranlib-14"
     search_context:
       ENV{PATH}:
@@ -1807,22 +1514,12 @@ events:
         - "/home/dwoyng/.local/bin"
         - "/home/dwoyng/.local/bin"
         - "/home/dwoyng/.local/bin"
-      CMAKE_INSTALL_PREFIX: "/usr/local"
-      CMAKE_SYSTEM_PREFIX_PATH:
-        - "/usr/local"
-        - "/usr"
-        - "/"
-        - "/home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data"
-        - "/usr/local"
-        - "/usr/X11R6"
-        - "/usr/pkg"
-        - "/opt"
   -
     kind: "find-v1"
     backtrace:
       - "/home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/share/cmake-4.2/Modules/Compiler/Clang-FindBinUtils.cmake:50 (find_program)"
       - "/home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
-      - "protocol/CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS"
     description: "`clang-scan-deps` dependency scanner"
@@ -1854,26 +1551,6 @@ events:
       - "/usr/games/"
       - "/usr/local/games/"
       - "/snap/bin/"
-      - "/usr/local/bin/"
-      - "/usr/local/sbin/"
-      - "/usr/local/"
-      - "/usr/bin/"
-      - "/usr/sbin/"
-      - "/usr/"
-      - "/bin/"
-      - "/sbin/"
-      - "/home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/bin/"
-      - "/home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/sbin/"
-      - "/home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/"
-      - "/usr/X11R6/bin/"
-      - "/usr/X11R6/sbin/"
-      - "/usr/X11R6/"
-      - "/usr/pkg/bin/"
-      - "/usr/pkg/sbin/"
-      - "/usr/pkg/"
-      - "/opt/bin/"
-      - "/opt/sbin/"
-      - "/opt/"
     searched_directories:
       - "/usr/bin/clang-scan-deps-14.0"
       - "/usr/lib/ccache/clang-scan-deps-14.0"
@@ -1889,26 +1566,6 @@ events:
       - "/usr/games/clang-scan-deps-14.0"
       - "/usr/local/games/clang-scan-deps-14.0"
       - "/snap/bin/clang-scan-deps-14.0"
-      - "/usr/local/bin/clang-scan-deps-14.0"
-      - "/usr/local/sbin/clang-scan-deps-14.0"
-      - "/usr/local/clang-scan-deps-14.0"
-      - "/usr/bin/clang-scan-deps-14.0"
-      - "/usr/sbin/clang-scan-deps-14.0"
-      - "/usr/clang-scan-deps-14.0"
-      - "/bin/clang-scan-deps-14.0"
-      - "/sbin/clang-scan-deps-14.0"
-      - "/home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/bin/clang-scan-deps-14.0"
-      - "/home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/sbin/clang-scan-deps-14.0"
-      - "/home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/clang-scan-deps-14.0"
-      - "/usr/X11R6/bin/clang-scan-deps-14.0"
-      - "/usr/X11R6/sbin/clang-scan-deps-14.0"
-      - "/usr/X11R6/clang-scan-deps-14.0"
-      - "/usr/pkg/bin/clang-scan-deps-14.0"
-      - "/usr/pkg/sbin/clang-scan-deps-14.0"
-      - "/usr/pkg/clang-scan-deps-14.0"
-      - "/opt/bin/clang-scan-deps-14.0"
-      - "/opt/sbin/clang-scan-deps-14.0"
-      - "/opt/clang-scan-deps-14.0"
     found: "/usr/bin/clang-scan-deps-14"
     search_context:
       ENV{PATH}:
@@ -1934,27 +1591,209 @@ events:
         - "/home/dwoyng/.local/bin"
         - "/home/dwoyng/.local/bin"
         - "/home/dwoyng/.local/bin"
-      CMAKE_INSTALL_PREFIX: "/usr/local"
-      CMAKE_SYSTEM_PREFIX_PATH:
-        - "/usr/local"
-        - "/usr"
-        - "/"
-        - "/home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data"
-        - "/usr/local"
-        - "/usr/X11R6"
-        - "/usr/pkg"
-        - "/opt"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "/home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/share/cmake-4.2/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/dwoyng/BTL_MMT/build/CMakeFiles/CMakeScratch/TryCompile-nTV2JK"
+      binary: "/home/dwoyng/BTL_MMT/build/CMakeFiles/CMakeScratch/TryCompile-nTV2JK"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-14"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/dwoyng/BTL_MMT/build/CMakeFiles/CMakeScratch/TryCompile-nTV2JK'
+        
+        Run Build Command(s): /home/dwoyng/.local/bin/ninja -v cmTC_224c8
+        [1/2] /usr/lib/ccache/clang-14   -v -MD -MT CMakeFiles/cmTC_224c8.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_224c8.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_224c8.dir/CMakeCCompilerABI.c.o -c /home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/share/cmake-4.2/Modules/CMakeCCompilerABI.c
+        Ubuntu clang version 14.0.0-1ubuntu1.1
+        Target: x86_64-pc-linux-gnu
+        Thread model: posix
+        InstalledDir: /usr/bin
+        Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+        Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+         (in-process)
+         "/usr/lib/llvm-14/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/dwoyng/BTL_MMT/build/CMakeFiles/CMakeScratch/TryCompile-nTV2JK -resource-dir /usr/lib/llvm-14/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_224c8.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_224c8.dir/CMakeCCompilerABI.c.o -sys-header-deps -internal-isystem /usr/lib/llvm-14/lib/clang/14.0.0/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdebug-compilation-dir=/home/dwoyng/BTL_MMT/build/CMakeFiles/CMakeScratch/TryCompile-nTV2JK -ferror-limit 19 -fgnuc-version=4.2.1 -fcolor-diagnostics -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_224c8.dir/CMakeCCompilerABI.c.o -x c /home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/share/cmake-4.2/Modules/CMakeCCompilerABI.c
+        clang -cc1 version 14.0.0 based upon LLVM 14.0.0 default target x86_64-pc-linux-gnu
+        ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"
+        ignoring nonexistent directory "/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/llvm-14/lib/clang/14.0.0/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        [2/2] : && /usr/lib/ccache/clang-14  -v -Wl,-v CMakeFiles/cmTC_224c8.dir/CMakeCCompilerABI.c.o -o cmTC_224c8   && :
+        Ubuntu clang version 14.0.0-1ubuntu1.1
+        Target: x86_64-pc-linux-gnu
+        Thread model: posix
+        InstalledDir: /usr/bin
+        Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+        Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+         "/usr/bin/ld" -pie -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_224c8 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/11 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-14/bin/../lib -L/lib -L/usr/lib -v CMakeFiles/cmTC_224c8.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtendS.o /lib/x86_64-linux-gnu/crtn.o
+        GNU ld (GNU Binutils for Ubuntu) 2.38
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:217 (message)"
+      - "/home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/share/cmake-4.2/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/llvm-14/lib/clang/14.0.0/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/llvm-14/lib/clang/14.0.0/include] ==> [/usr/lib/llvm-14/lib/clang/14.0.0/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/llvm-14/lib/clang/14.0.0/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "/home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/share/cmake-4.2/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: '/home/dwoyng/BTL_MMT/build/CMakeFiles/CMakeScratch/TryCompile-nTV2JK']
+        ignore line: []
+        ignore line: [Run Build Command(s): /home/dwoyng/.local/bin/ninja -v cmTC_224c8]
+        ignore line: [[1/2] /usr/lib/ccache/clang-14   -v -MD -MT CMakeFiles/cmTC_224c8.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_224c8.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_224c8.dir/CMakeCCompilerABI.c.o -c /home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/share/cmake-4.2/Modules/CMakeCCompilerABI.c]
+        ignore line: [Ubuntu clang version 14.0.0-1ubuntu1.1]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/bin]
+        ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11]
+        ignore line: [Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        ignore line: [ (in-process)]
+        ignore line: [ "/usr/lib/llvm-14/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/dwoyng/BTL_MMT/build/CMakeFiles/CMakeScratch/TryCompile-nTV2JK -resource-dir /usr/lib/llvm-14/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_224c8.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_224c8.dir/CMakeCCompilerABI.c.o -sys-header-deps -internal-isystem /usr/lib/llvm-14/lib/clang/14.0.0/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdebug-compilation-dir=/home/dwoyng/BTL_MMT/build/CMakeFiles/CMakeScratch/TryCompile-nTV2JK -ferror-limit 19 -fgnuc-version=4.2.1 -fcolor-diagnostics -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_224c8.dir/CMakeCCompilerABI.c.o -x c /home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/share/cmake-4.2/Modules/CMakeCCompilerABI.c]
+        ignore line: [clang -cc1 version 14.0.0 based upon LLVM 14.0.0 default target x86_64-pc-linux-gnu]
+        ignore line: [ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"]
+        ignore line: [ignoring nonexistent directory "/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/llvm-14/lib/clang/14.0.0/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [[2/2] : && /usr/lib/ccache/clang-14  -v -Wl -v CMakeFiles/cmTC_224c8.dir/CMakeCCompilerABI.c.o -o cmTC_224c8   && :]
+        ignore line: [Ubuntu clang version 14.0.0-1ubuntu1.1]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/bin]
+        ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11]
+        ignore line: [Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        link line: [ "/usr/bin/ld" -pie -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_224c8 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/11 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-14/bin/../lib -L/lib -L/usr/lib -v CMakeFiles/cmTC_224c8.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtendS.o /lib/x86_64-linux-gnu/crtn.o]
+          arg [/usr/bin/ld] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_224c8] ==> ignore
+          arg [/lib/x86_64-linux-gnu/Scrt1.o] ==> obj [/lib/x86_64-linux-gnu/Scrt1.o]
+          arg [/lib/x86_64-linux-gnu/crti.o] ==> obj [/lib/x86_64-linux-gnu/crti.o]
+          arg [/usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtbeginS.o] ==> obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtbeginS.o]
+          arg [-L/usr/bin/../lib/gcc/x86_64-linux-gnu/11] ==> dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/11]
+          arg [-L/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../lib64] ==> dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../lib64]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/usr/lib/llvm-14/bin/../lib] ==> dir [/usr/lib/llvm-14/bin/../lib]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_224c8.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [/usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtendS.o] ==> obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtendS.o]
+          arg [/lib/x86_64-linux-gnu/crtn.o] ==> obj [/lib/x86_64-linux-gnu/crtn.o]
+        linker tool for 'C': /usr/bin/ld
+        collapse obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtbeginS.o] ==> [/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o]
+        collapse obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtendS.o] ==> [/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o]
+        collapse library dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/11] ==> [/usr/lib/gcc/x86_64-linux-gnu/11]
+        collapse library dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/usr/lib/llvm-14/bin/../lib] ==> [/usr/lib/llvm-14/lib]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/lib/x86_64-linux-gnu/Scrt1.o;/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o;/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/11;/usr/lib64;/lib/x86_64-linux-gnu;/lib64;/usr/lib/x86_64-linux-gnu;/usr/lib/llvm-14/lib;/lib;/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/share/cmake-4.2/Modules/Internal/CMakeDetermineLinkerId.cmake:38 (message)"
+      - "/home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "/home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/share/cmake-4.2/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the C compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils for Ubuntu) 2.38
   -
     kind: "try_compile-v1"
     backtrace:
       - "/home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
       - "/home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/share/cmake-4.2/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "protocol/CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:2 (project)"
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/home/dwoyng/BTL_MMT/build/CMakeFiles/CMakeScratch/TryCompile-XgRiWo"
-      binary: "/home/dwoyng/BTL_MMT/build/CMakeFiles/CMakeScratch/TryCompile-XgRiWo"
+      source: "/home/dwoyng/BTL_MMT/build/CMakeFiles/CMakeScratch/TryCompile-tG7UUh"
+      binary: "/home/dwoyng/BTL_MMT/build/CMakeFiles/CMakeScratch/TryCompile-tG7UUh"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-14"
       CMAKE_CXX_FLAGS: ""
@@ -1965,10 +1804,10 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/dwoyng/BTL_MMT/build/CMakeFiles/CMakeScratch/TryCompile-XgRiWo'
+        Change Dir: '/home/dwoyng/BTL_MMT/build/CMakeFiles/CMakeScratch/TryCompile-tG7UUh'
         
-        Run Build Command(s): /home/dwoyng/.local/bin/ninja -v cmTC_da196
-        [1/2] /usr/lib/ccache/clang++-14   -v -MD -MT CMakeFiles/cmTC_da196.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_da196.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_da196.dir/CMakeCXXCompilerABI.cpp.o -c /home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /home/dwoyng/.local/bin/ninja -v cmTC_3c518
+        [1/2] /usr/lib/ccache/clang++-14   -v -MD -MT CMakeFiles/cmTC_3c518.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_3c518.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_3c518.dir/CMakeCXXCompilerABI.cpp.o -c /home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp
         Ubuntu clang version 14.0.0-1ubuntu1.1
         Target: x86_64-pc-linux-gnu
         Thread model: posix
@@ -1978,7 +1817,7 @@ events:
         Candidate multilib: .;@m64
         Selected multilib: .;@m64
          (in-process)
-         "/usr/lib/llvm-14/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/dwoyng/BTL_MMT/build/CMakeFiles/CMakeScratch/TryCompile-XgRiWo -resource-dir /usr/lib/llvm-14/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_da196.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_da196.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward -internal-isystem /usr/lib/llvm-14/lib/clang/14.0.0/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir=/home/dwoyng/BTL_MMT/build/CMakeFiles/CMakeScratch/TryCompile-XgRiWo -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -fcolor-diagnostics -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_da196.dir/CMakeCXXCompilerABI.cpp.o -x c++ /home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp
+         "/usr/lib/llvm-14/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/dwoyng/BTL_MMT/build/CMakeFiles/CMakeScratch/TryCompile-tG7UUh -resource-dir /usr/lib/llvm-14/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_3c518.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_3c518.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward -internal-isystem /usr/lib/llvm-14/lib/clang/14.0.0/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir=/home/dwoyng/BTL_MMT/build/CMakeFiles/CMakeScratch/TryCompile-tG7UUh -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -fcolor-diagnostics -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_3c518.dir/CMakeCXXCompilerABI.cpp.o -x c++ /home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp
         clang -cc1 version 14.0.0 based upon LLVM 14.0.0 default target x86_64-pc-linux-gnu
         ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"
         ignoring nonexistent directory "/include"
@@ -1992,7 +1831,7 @@ events:
          /usr/include/x86_64-linux-gnu
          /usr/include
         End of search list.
-        [2/2] : && /usr/lib/ccache/clang++-14  -v -Wl,-v CMakeFiles/cmTC_da196.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_da196   && :
+        [2/2] : && /usr/lib/ccache/clang++-14  -v -Wl,-v CMakeFiles/cmTC_3c518.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_3c518   && :
         Ubuntu clang version 14.0.0-1ubuntu1.1
         Target: x86_64-pc-linux-gnu
         Thread model: posix
@@ -2001,7 +1840,7 @@ events:
         Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
         Candidate multilib: .;@m64
         Selected multilib: .;@m64
-         "/usr/bin/ld" -pie -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_da196 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/11 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-14/bin/../lib -L/lib -L/usr/lib -v CMakeFiles/cmTC_da196.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtendS.o /lib/x86_64-linux-gnu/crtn.o
+         "/usr/bin/ld" -pie -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_3c518 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/11 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-14/bin/../lib -L/lib -L/usr/lib -v CMakeFiles/cmTC_3c518.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtendS.o /lib/x86_64-linux-gnu/crtn.o
         GNU ld (GNU Binutils for Ubuntu) 2.38
         
       exitCode: 0
@@ -2010,7 +1849,7 @@ events:
     backtrace:
       - "/home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:217 (message)"
       - "/home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/share/cmake-4.2/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "protocol/CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:2 (project)"
     message: |
       Parsed CXX implicit include dir info: rv=done
         found start of include info
@@ -2038,15 +1877,15 @@ events:
     backtrace:
       - "/home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
       - "/home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/share/cmake-4.2/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "protocol/CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:2 (project)"
     message: |
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/home/dwoyng/BTL_MMT/build/CMakeFiles/CMakeScratch/TryCompile-XgRiWo']
+        ignore line: [Change Dir: '/home/dwoyng/BTL_MMT/build/CMakeFiles/CMakeScratch/TryCompile-tG7UUh']
         ignore line: []
-        ignore line: [Run Build Command(s): /home/dwoyng/.local/bin/ninja -v cmTC_da196]
-        ignore line: [[1/2] /usr/lib/ccache/clang++-14   -v -MD -MT CMakeFiles/cmTC_da196.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_da196.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_da196.dir/CMakeCXXCompilerABI.cpp.o -c /home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /home/dwoyng/.local/bin/ninja -v cmTC_3c518]
+        ignore line: [[1/2] /usr/lib/ccache/clang++-14   -v -MD -MT CMakeFiles/cmTC_3c518.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_3c518.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_3c518.dir/CMakeCXXCompilerABI.cpp.o -c /home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Ubuntu clang version 14.0.0-1ubuntu1.1]
         ignore line: [Target: x86_64-pc-linux-gnu]
         ignore line: [Thread model: posix]
@@ -2058,7 +1897,7 @@ events:
         ignore line: [Selected multilib: .]
         ignore line: [@m64]
         ignore line: [ (in-process)]
-        ignore line: [ "/usr/lib/llvm-14/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/dwoyng/BTL_MMT/build/CMakeFiles/CMakeScratch/TryCompile-XgRiWo -resource-dir /usr/lib/llvm-14/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_da196.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_da196.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward -internal-isystem /usr/lib/llvm-14/lib/clang/14.0.0/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir=/home/dwoyng/BTL_MMT/build/CMakeFiles/CMakeScratch/TryCompile-XgRiWo -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -fcolor-diagnostics -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_da196.dir/CMakeCXXCompilerABI.cpp.o -x c++ /home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [ "/usr/lib/llvm-14/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/dwoyng/BTL_MMT/build/CMakeFiles/CMakeScratch/TryCompile-tG7UUh -resource-dir /usr/lib/llvm-14/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_3c518.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_3c518.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward -internal-isystem /usr/lib/llvm-14/lib/clang/14.0.0/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir=/home/dwoyng/BTL_MMT/build/CMakeFiles/CMakeScratch/TryCompile-tG7UUh -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -fcolor-diagnostics -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_3c518.dir/CMakeCXXCompilerABI.cpp.o -x c++ /home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [clang -cc1 version 14.0.0 based upon LLVM 14.0.0 default target x86_64-pc-linux-gnu]
         ignore line: [ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"]
         ignore line: [ignoring nonexistent directory "/include"]
@@ -2072,7 +1911,7 @@ events:
         ignore line: [ /usr/include/x86_64-linux-gnu]
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
-        ignore line: [[2/2] : && /usr/lib/ccache/clang++-14  -v -Wl -v CMakeFiles/cmTC_da196.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_da196   && :]
+        ignore line: [[2/2] : && /usr/lib/ccache/clang++-14  -v -Wl -v CMakeFiles/cmTC_3c518.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_3c518   && :]
         ignore line: [Ubuntu clang version 14.0.0-1ubuntu1.1]
         ignore line: [Target: x86_64-pc-linux-gnu]
         ignore line: [Thread model: posix]
@@ -2083,7 +1922,7 @@ events:
         ignore line: [@m64]
         ignore line: [Selected multilib: .]
         ignore line: [@m64]
-        link line: [ "/usr/bin/ld" -pie -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_da196 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/11 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-14/bin/../lib -L/lib -L/usr/lib -v CMakeFiles/cmTC_da196.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtendS.o /lib/x86_64-linux-gnu/crtn.o]
+        link line: [ "/usr/bin/ld" -pie -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_3c518 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/11 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-14/bin/../lib -L/lib -L/usr/lib -v CMakeFiles/cmTC_3c518.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtendS.o /lib/x86_64-linux-gnu/crtn.o]
           arg [/usr/bin/ld] ==> ignore
           arg [-pie] ==> ignore
           arg [-zrelro] ==> ignore
@@ -2095,7 +1934,7 @@ events:
           arg [-dynamic-linker] ==> ignore
           arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_da196] ==> ignore
+          arg [cmTC_3c518] ==> ignore
           arg [/lib/x86_64-linux-gnu/Scrt1.o] ==> obj [/lib/x86_64-linux-gnu/Scrt1.o]
           arg [/lib/x86_64-linux-gnu/crti.o] ==> obj [/lib/x86_64-linux-gnu/crti.o]
           arg [/usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtbeginS.o] ==> obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/11/crtbeginS.o]
@@ -2109,7 +1948,7 @@ events:
           arg [-L/lib] ==> dir [/lib]
           arg [-L/usr/lib] ==> dir [/usr/lib]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_da196.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_3c518.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
           arg [-lgcc_s] ==> lib [gcc_s]
@@ -2143,8 +1982,37 @@ events:
       - "/home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/share/cmake-4.2/Modules/Internal/CMakeDetermineLinkerId.cmake:38 (message)"
       - "/home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
       - "/home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/share/cmake-4.2/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "protocol/CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:2 (project)"
     message: |
       Running the CXX compiler's linker: "/usr/bin/ld" "-v"
       GNU ld (GNU Binutils for Ubuntu) 2.38
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/share/cmake-4.2/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "/home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/share/cmake-4.2/Modules/CheckCSourceCompiles.cmake:103 (cmake_check_source_compiles)"
+      - "/home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/share/cmake-4.2/Modules/FindThreads.cmake:160 (check_c_source_compiles)"
+      - "/home/dwoyng/.local/pipx/venvs/cmake/lib/python3.10/site-packages/cmake/data/share/cmake-4.2/Modules/FindThreads.cmake:226 (_threads_check_libc)"
+      - "CMakeLists.txt:30 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/home/dwoyng/BTL_MMT/build/CMakeFiles/CMakeScratch/TryCompile-T3iN4C"
+      binary: "/home/dwoyng/BTL_MMT/build/CMakeFiles/CMakeScratch/TryCompile-T3iN4C"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-14"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/home/dwoyng/BTL_MMT/build/CMakeFiles/CMakeScratch/TryCompile-T3iN4C'
+        
+        Run Build Command(s): /home/dwoyng/.local/bin/ninja -v cmTC_c46ba
+        [1/2] /usr/lib/ccache/clang-14 -DCMAKE_HAVE_LIBC_PTHREAD  -std=gnu11 -MD -MT CMakeFiles/cmTC_c46ba.dir/src.c.o -MF CMakeFiles/cmTC_c46ba.dir/src.c.o.d -o CMakeFiles/cmTC_c46ba.dir/src.c.o -c /home/dwoyng/BTL_MMT/build/CMakeFiles/CMakeScratch/TryCompile-T3iN4C/src.c
+        [2/2] : && /usr/lib/ccache/clang-14   CMakeFiles/cmTC_c46ba.dir/src.c.o -o cmTC_c46ba   && :
+        
+      exitCode: 0
 ...
