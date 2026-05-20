@@ -10,7 +10,7 @@
 typedef struct {
     int sockfd;
     struct sockaddr_in server_addr;
-    protocol_handle protocol; // Hứng con trỏ từ porting.h
+    protocol_handle protocol; 
     uint8_t is_running;
     rdt_t* pkg;
 } client_impl_t;
